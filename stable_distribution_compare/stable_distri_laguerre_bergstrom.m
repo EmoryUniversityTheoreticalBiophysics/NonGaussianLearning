@@ -44,9 +44,9 @@ n = 1:20;
 w = (-1).^(n-1).*gamma(n*alpha1+1)./factorial(n).*sin(n*(pi*alpha1/2));
 
 % The right joint point of laguerre and bergstrom.
-right_p = round(delta1+b*gamma1);
+right_p = round(delta1/l+b*gamma1/l)*l;
 % The left joint point of laguerre and bergstrom.
-left_p = round(delta1-b*gamma1); 
+left_p = round(delta1/l-b*gamma1/l)*l; 
 
 % Three sections of variable ranges.
 phi_left = -L:l:left_p-l;
