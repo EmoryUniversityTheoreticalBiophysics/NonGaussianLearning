@@ -175,7 +175,7 @@ set(inset,'Box','off');
 set(gcf, 'PaperUnits', 'inches')
 set(gcf,'PaperPosition',[-1 -0.2 13 4]);
 set(gcf,'PaperSize',[11 3.8]);
-saveas(gcf,'../results/Fitting','pdf');
+saveas(gcf,'../figures/Fitting','pdf');
 
 
 %% Figure 3. Prediction.
@@ -328,7 +328,7 @@ text(letter_x,letter_y,'(F)','Units', 'Normalized', 'VerticalAlignment', 'Top','
 set(gcf, 'PaperUnits', 'inches')
 set(gcf,'PaperPosition',[-0.9 -0.2 13 6.6]);
 set(gcf,'PaperSize',[11 6.3]);
-saveas(gcf,'../results/Prediction','pdf');
+saveas(gcf,'../figures/Prediction','pdf');
 
 
 %% Figure 4.
@@ -406,7 +406,7 @@ text(-0.02,1.3,'(C)','Units', 'Normalized', 'VerticalAlignment', 'Top','FontWeig
 set(gcf, 'PaperUnits', 'inches')
 set(gcf,'PaperPosition',[-1 -0.3 13 3]);
 set(gcf,'PaperSize',[11 2.3]);
-saveas(gcf,'../results/Figure_parameterSpace','pdf');
+saveas(gcf,'../figures/Figure_parameterSpace','pdf');
 
 
 %% Figure 5. Power law model.
@@ -594,6 +594,6 @@ text(letter_x,letter_y,'(F)','Units', 'Normalized', 'VerticalAlignment', 'Top','
 set(gcf, 'PaperUnits', 'inches')
 set(gcf,'PaperPosition',[-0.9 -0.3 13 5.9]);
 set(gcf,'PaperSize',[11 5.5]);
-saveas(gcf,'../results/Figure_powerlaw','pdf');
+saveas(gcf,'../figures/Figure_powerlaw','pdf');
 
 end
