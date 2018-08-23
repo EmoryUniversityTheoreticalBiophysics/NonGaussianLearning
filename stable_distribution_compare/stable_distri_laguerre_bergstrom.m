@@ -100,7 +100,7 @@ sd_lb = [sd_left;sd_mid;sd_right];
 % the right end of the vector, and include 1+2L elements in total. 
 % If right_p is bigger than L, then we should count from the left end of the vector.
 if left_p < -L
-    sd_lb = sd_lb((-left_p+1+L-2*L)/l:(-left_p+1+L)/l,1);
+    sd_lb = sd_lb((-left_p+l+L-2*L)/l:(-left_p+l+L)/l,1);
 else
     % Right excessive part (if any) will be deleted automatically in this line.
     sd_lb = sd_lb(1:2*L/l+1,1); 
