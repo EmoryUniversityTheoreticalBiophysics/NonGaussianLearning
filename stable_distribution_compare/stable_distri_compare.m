@@ -46,12 +46,12 @@ if alpha1 == 1
     tic;
     x=-L:l:L;
     Cauchy_Distri=(gamma1/pi)*(1./(gamma1^2+x.^2));
-    Cauchy_Distri=Cauchy_Distri/sum(Cauchy_Distri);
+    Cauchy_Distri=Cauchy_Distri/sum(Cauchy_Distri*l);
     toc;
     
     figure;hold;
     plot(-L:l:L,P_stable,'b','LineWidth',1);
-    plot(-L:l:L,stable_distri_sample,'g','LineWidth',1);
+    plot(-L:L,stable_distri_sample,'g','LineWidth',1);
     plot(-L:l:L,laguerre_bergstrom,'r','LineWidth',1);
     plot(-L:l:L,p_mveillette,'m','LineWidth',1);
     plot(-L:l:L,Cauchy_Distri,'k','LineWidth',1);
@@ -64,7 +64,7 @@ if alpha1 == 1
 else
     figure;hold;
     plot(-L:l:L,P_stable,'b','LineWidth',1);
-    plot(-L:l:L,stable_distri_sample,'g','LineWidth',1);
+    plot(-L:L,stable_distri_sample,'g','LineWidth',1);
     plot(-L:l:L,laguerre_bergstrom,'r','LineWidth',1);
     plot(-L:l:L,p_mveillette,'m','LineWidth',1);
     legend ('integral','sampling','quadrature','mveillette');
